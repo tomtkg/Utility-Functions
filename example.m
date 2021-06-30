@@ -5,6 +5,7 @@ function example()
 end
 
 function WVexample()
+%Weight Vector example
     label = ["\lambda_1","\lambda_2","\lambda_3"];
     [W,N] = WVH('SLD',3,3);
     obj3d(W,['SLDN',num2str(N)],label);

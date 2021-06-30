@@ -1,5 +1,5 @@
 function W = TSLD(M,N)
-%%Two-layerd Simplex-lattice Desigin
+%Two-layerd Simplex-lattice Desigin
     H1 = 1;
     while nchoosek(H1+M,M-1) <= N
         H1 = H1 + 1;
