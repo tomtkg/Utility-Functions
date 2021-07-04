@@ -1,7 +1,7 @@
 classdef ALGORITHM < handle & matlab.mixin.Heterogeneous
     properties(SetAccess = private)
         parameter = {}; % parameters of the algorithm
-        outputFcn;	    % function called after each generation
+        outputFcn;      % function called after each generation
         pro;            % problem solved in current execution
         result;         % populations saved in current execution
         metric;         % metric values of current populations
@@ -17,7 +17,7 @@ classdef ALGORITHM < handle & matlab.mixin.Heterogeneous
     methods(Sealed)
         function Solve(obj,Problem)
             try
-                obj.pro    = Problem;
+                obj.pro = Problem;
                 obj.result = {};
                 if isequal(obj.outputFcn,@ALGORITHM.EveryGenAll)
                     value = 1:Problem.maxFE/Problem.N;
@@ -53,8 +53,8 @@ classdef ALGORITHM < handle & matlab.mixin.Heterogeneous
     methods(Static, Sealed)
         function nofinish = EveryGenAll(obj,Population)
             gen = obj.pro.FE/obj.pro.N;
-            obj.metric.HV(gen)  = HV(Population,obj.pro.optimum);
-            obj.metric.IGD(gen)  = IGD(Population,obj.pro.optimum);
+            obj.metric.HV(gen) = HV(Population,obj.pro.optimum);
+            obj.metric.IGD(gen) = IGD(Population,obj.pro.optimum);
             nofinish = true;
             if obj.pro.FE >= obj.pro.maxFE
                 nofinish = false;
