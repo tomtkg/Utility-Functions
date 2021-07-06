@@ -10,6 +10,7 @@ function var2d(data,name,label)
         'Markerfacecolor',[.7 .7 .7],'Markeredgecolor',[.4 .4 .4]);
     Min = min(data,[],1); Max = max(data,[],1); D = (Max-Min)/20;
     xlim([Min(1)-D(1) Max(1)+D(1)]); ylim([Min(2)-D(2) Max(2)+D(2)]);
+    %xlim([-0.05 1.05]); ylim([-0.05 1.05]); yticks([0 0.2 0.4 0.6 0.8 1]);
     xlabel(label(1)); ylabel(label(2));
     axis square;
     exportgraphics(gcf,[name,'.pdf'],'BackgroundColor','none','ContentType','vector');

@@ -1,8 +1,7 @@
 function [X,N] = RN(method,M,N)
 %Random Number
     X = feval(method,M,N);
-    W = X;
-    N = size(W,1);
+    N = size(X,1);
 end
 function X = MT(M,N) %Mersenne Twister (used by default stream)
     X = rand([N M]);
@@ -26,5 +25,5 @@ function X = Sobol(M,N)
     X = net(p,N);
 end
 function X = Hammersley(M,N)
-    X = [Halton(M-1,N),(1:N)'/N];
+    X = [linspace(0,1,N)',Halton(M-1,N)];
 end
