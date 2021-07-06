@@ -1,8 +1,25 @@
 function example()
     cd(fileparts(mfilename('fullpath')));
     addpath(genpath(cd));
+    RNexample();
     WVexample();
     ACexample();
+end
+function RNexample()
+%Random Number example
+    rng(1);
+    [X,N] = RN('MT',2,400);
+    var2d(X,['MTXN',num2str(N)]);
+    [X,N] = RN('LHS',2,400);
+    var2d(X,['LHSXN',num2str(N)]);
+    [X,N] = RN('Grid',2,400);
+    var2d(X,['GridXN',num2str(N)]);
+    [X,N] = RN('Halton',2,400);
+    var2d(X,['HaltonXN',num2str(N)]);
+    [X,N] = RN('Sobol',2,400);
+    var2d(X,['SobolXN',num2str(N)]);
+    [X,N] = RN('Hammersley',2,400);
+    var2d(X,['HammersleyXN',num2str(N)]);
 end
 function WVexample()
 %Weight Vector example
