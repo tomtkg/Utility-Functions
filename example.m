@@ -7,35 +7,31 @@ function example()
 end
 function RNexample()
 %Random Number example
+    names = ["MT","LHS","Grid","Halton","Sobol","Hammersley"];
     rng(1);
-    [X,N] = RN('MT',2,400);
-    var2d(X,['MTXN',num2str(N)]);
-    [X,N] = RN('LHS',2,400);
-    var2d(X,['LHSXN',num2str(N)]);
-    [X,N] = RN('Grid',2,400);
-    var2d(X,['GridXN',num2str(N)]);
-    [X,N] = RN('Halton',2,400);
-    var2d(X,['HaltonXN',num2str(N)]);
-    [X,N] = RN('Sobol',2,400);
-    var2d(X,['SobolXN',num2str(N)]);
-    [X,N] = RN('Hammersley',2,400);
-    var2d(X,['HammersleyXN',num2str(N)]);
+    for name = names
+        [X,N] = RN(name,2,400);
+        var2d(X,[char(name),'XN',num2str(N)]);
+        TWVexample(X,char(name));
+    end
+end
+function TWVexample(X,name)
+%Transformation to Weight Vector example
+    label = ["\lambda_1","\lambda_2","\lambda_3"];
+    for i = 1 : 3
+       [W,N] = TWV(['Method',num2str(i)],X);
+       obj3d(W,[name,'Method',num2str(i),'N',num2str(N)],label);
+    end
 end
 function WVexample()
 %Weight Vector example
     label = ["\lambda_1","\lambda_2","\lambda_3"];
-    [W,N] = WVH('SLD',3,3);
-    obj3d(W,['SLDN',num2str(N)],label);
-    [W,N] = WVH('ILD',3,2);
-    obj3d(W,['ILDN',num2str(N)],label);
-    [W,N] = WVH('TSLD',3,2,1);
-    obj3d(W,['TSLDN',num2str(N)],label);
-    [W,N] = WV('SLD',3,136);
-    obj3d(W,['SLDN',num2str(N)],label);
-    [W,N] = WV('ILD',3,136);
-    obj3d(W,['ILDN',num2str(N)],label);
-    [W,N] = WV('TSLD',8,128);
-    PCP(W,['TSLDN',num2str(N)]);
+    [W,N] = WV('SLD',3,10);    obj3d(W,['SLDN',num2str(N)],label);
+    [W,N] = WV('ILD',3,10);    obj3d(W,['ILDN',num2str(N)],label);
+    [W,N] = WV('TSLD',3,9);    obj3d(W,['TSLDN',num2str(N)],label);
+    [W,N] = WVH('SLD',3,15);   obj3d(W,['SLDN',num2str(N)],label);
+    [W,N] = WVH('ILD',3,9);    obj3d(W,['ILDN',num2str(N)],label);
+    [W,N] = WVH('TSLD',8,3,1); PCP(W,['TSLDN',num2str(N)]);
 end
 function ACexample()
 %Algorithm Comparison example
