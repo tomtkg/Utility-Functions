@@ -1,8 +1,8 @@
-# Random Number
+# Random Number (N=400)
 
 ||||
 |:-:|:-:|:-:|
-|![image](../Data/MTXN400.png)|![image](../Data/LHSXN400.png)|![image](../Data/GridXN400.png)|
+|![image](../Data/RN/MTXN400.png)|![image](../Data/RN/LHSXN400.png)|![image](../Data/RN/GridXN400.png)|
 |Mersenne Twister|Latin Hypercube Sampling|Grid (not random number)|
-|![image](../Data/HaltonXN400.png)|![image](../Data/SobolXN400.png)|![image](../Data/HammersleyXN400.png)|
+|![image](../Data/RN/HaltonXN400.png)|![image](../Data/RN/SobolXN400.png)|![image](../Data/RN/HammersleyXN400.png)|
 |Halton|Sobol|Hammersley|

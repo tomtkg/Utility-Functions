@@ -1,11 +1,17 @@
 # Weight Vector
 
+## Uniform Weight Vector
+
 ||||
 |:-:|:-:|:-:|
 |![image](../Data/WV/SLDN10.png)|![image](../Data/WV/ILDN10.png)|![image](../Data/WV/TSLDN9.png)|
-|SLD N=10|ILD N=10|TSLD N=10|
+|SLD N=10|ILD N=10|TSLD N=9|
 |![image](../Data/WV/SLDN136.png)|![image](../Data/WV/ILDN136.png)|![image](../Data/WV/TSLDN128.png)|
 |SLD N=136|ILD N=136|TSLD N=128 (M=8)|
+
+## Random Weight Vector
+||||
+|:-:|:-:|:-:|
 |![image](../Data/WV/MTMethod1N400.png)|![image](../Data/WV/MTMethod2N400.png)|![image](../Data/WV/MTMethod3N400.png)|
 |MT N=400|MT N=400|MT N=400|
 |![image](../Data/WV/LHSMethod1N400.png)|![image](../Data/WV/LHSMethod2N400.png)|![image](../Data/WV/LHSMethod3N400.png)|
