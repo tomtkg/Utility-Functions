@@ -17,4 +17,6 @@ function PV(label,alg,pro,param,x)
     end
     axParam(param,HVPV,pro,label,'southwest','Hypervolume',x);
     axParam(param,IGDPV,pro,label,'northwest','IGD',x);
+    axParam(param,HVPV./HVPV(3,:),['2',pro,],label,'southwest','Hypervolume',x);
+    axParam(param,IGDPV./IGDPV(3,:),['2',pro],label,'northwest','IGD',x);
 end
