@@ -8,6 +8,6 @@ function axAlg(data,name,label,y)
     axis square;
     exportgraphics(gcf,[name,y,'Alg.pdf'],'BackgroundColor','none','ContentType','vector');
     exportgraphics(gcf,[name,y,'Alg.emf'],'BackgroundColor','none','ContentType','vector');
-    savefig([name,'Alg.fig']);
+    savefig([name,y,'Alg.fig']);
     close;
 end

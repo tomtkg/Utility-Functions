@@ -19,6 +19,6 @@ function axParam(X,data,name,label,pos,y,x)
     axis square;
     exportgraphics(gcf,[name,y,'Param.pdf'],'BackgroundColor','none','ContentType','vector');
     exportgraphics(gcf,[name,y,'Param.emf'],'BackgroundColor','none','ContentType','vector');
-    savefig([name,'Param.fig']);
+    savefig([name,y,'Param.fig']);
     close;
 end
