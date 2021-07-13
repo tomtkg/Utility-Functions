@@ -1,7 +1,6 @@
 # Weight Vector
 
 ## Uniform Weight Vector
-
 ||||
 |:-:|:-:|:-:|
 |![image](../Data/WV/SLDN10.png)|![image](../Data/WV/ILDN10.png)|![image](../Data/WV/TSLDN9.png)|
