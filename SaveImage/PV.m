@@ -17,6 +17,8 @@ function PV(label,alg,pro,param,x)
     end
     axParam(param,HVPV,pro,label,'southwest','Hypervolume',x);
     axParam(param,IGDPV,pro,label,'northwest','IGD',x);
-    axParam(param,HVPV./HVPV(3,:),['2',pro,],label,'southwest','Hypervolume',x);
-    axParam(param,IGDPV./IGDPV(3,:),['2',pro],label,'northwest','IGD',x);
+    HVPV = HVPV./repelem(HVPV(3:3:end,1),3);
+    IGDPV = IGDPV./repelem(IGDPV(3:3:end,1),3);
+    axParam(param,HVPV,pro,label,'southwest','Magnification of Hypervolume',x);
+    axParam(param,IGDPV,pro,label,'northwest','Magnification of IGD',x);
 end
