@@ -9,7 +9,7 @@ function obj3d(data,name,label)
     plot3(data(:,1),data(:,2),data(:,3),'o','MarkerSize',8, ...
         'Markerfacecolor',[.7 .7 .7],'Markeredgecolor',[.4 .4 .4]);
     xlim([-0.05 1.05]); xlabel(label(1),'position',[0.4,1.2,-0.15]);
-    ylim([-0.05 1.05]); ylabel(label(1),'position',[1.2,0.4,-0.15]);
+    ylim([-0.05 1.05]); ylabel(label(2),'position',[1.2,0.4,-0.15]);
     zlim([-0.05 1.05]); zlabel(label(3),'position',[0.4,-0.77,0.5],'Rotation',0);
     zticks([0 0.5 1]); axis square;
     exportgraphics(gcf,[name,'.pdf'],'BackgroundColor','none','ContentType','vector');
