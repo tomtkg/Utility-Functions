@@ -1,10 +1,18 @@
 function platemo(varargin)
     cd(fileparts(mfilename('fullpath')));
     addpath(genpath(cd));
-    
+    if isempty(varargin)
+        ExpList = expList();
+        parfor i = 1 : size(ExpList,1)
+            runExp(ExpList{i,:});
+        end
+    else
+        runExp(varargin);
+    end
+end
+function runExp(varargin)
     Problem   = getSetting(varargin,'problem',{'N','M','D','maxFE'});
     Algorithm = getSetting(varargin,'algorithm','outputFcn');
-
     for i = 1 : 31
         rng(i);
         Algorithm.Solve(Problem);

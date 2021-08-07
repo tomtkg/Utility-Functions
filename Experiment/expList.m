@@ -1,0 +1,34 @@
+function ExpList = expList()
+    ExpList = {
+        'algorithm',@NSGAII,'problem',@DTLZ1,'N',136,'M',3,'D',7,'maxFE',136*250,'outputFcn',@ALGORITHM.EveryGenAll;
+        'algorithm',{@MOEAD,4},'problem',@DTLZ1,'N',136,'M',3,'D',7,'maxFE',136*250,'outputFcn',@ALGORITHM.EveryGenAll;
+        'algorithm',{@MOEADILD,4},'problem',@DTLZ1,'N',136,'M',3,'D',7,'maxFE',136*250,'outputFcn',@ALGORITHM.EveryGenAll;
+        'algorithm',@NSGAII,'problem',@DTLZ1,'N',136,'M',3,'D',2,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',{@MOEAD,4},'problem',@DTLZ1,'N',136,'M',3,'D',2,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',{@MOEADILD,4},'problem',@DTLZ1,'N',136,'M',3,'D',2,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',@NSGAII,'problem',@DTLZ1,'N',136,'M',3,'D',3,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',{@MOEAD,4},'problem',@DTLZ1,'N',136,'M',3,'D',3,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',{@MOEADILD,4},'problem',@DTLZ1,'N',136,'M',3,'D',3,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',@NSGAII,'problem',@DTLZ1,'N',136,'M',3,'D',4,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',{@MOEAD,4},'problem',@DTLZ1,'N',136,'M',3,'D',4,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',{@MOEADILD,4},'problem',@DTLZ1,'N',136,'M',3,'D',4,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',@NSGAII,'problem',@DTLZ1,'N',136,'M',3,'D',5,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',{@MOEAD,4},'problem',@DTLZ1,'N',136,'M',3,'D',5,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',{@MOEADILD,4},'problem',@DTLZ1,'N',136,'M',3,'D',5,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',@NSGAII,'problem',@DTLZ1,'N',136,'M',3,'D',6,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',{@MOEAD,4},'problem',@DTLZ1,'N',136,'M',3,'D',6,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',{@MOEADILD,4},'problem',@DTLZ1,'N',136,'M',3,'D',6,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',@NSGAII,'problem',@DTLZ1,'N',136,'M',3,'D',7,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',{@MOEAD,4},'problem',@DTLZ1,'N',136,'M',3,'D',7,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',{@MOEADILD,4},'problem',@DTLZ1,'N',136,'M',3,'D',7,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',@NSGAII,'problem',@DTLZ1,'N',136,'M',3,'D',8,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',{@MOEAD,4},'problem',@DTLZ1,'N',136,'M',3,'D',8,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',{@MOEADILD,4},'problem',@DTLZ1,'N',136,'M',3,'D',8,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',@NSGAII,'problem',@DTLZ1,'N',136,'M',3,'D',9,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',{@MOEAD,4},'problem',@DTLZ1,'N',136,'M',3,'D',9,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',{@MOEADILD,4},'problem',@DTLZ1,'N',136,'M',3,'D',9,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',@NSGAII,'problem',@DTLZ1,'N',136,'M',3,'D',10,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',{@MOEAD,4},'problem',@DTLZ1,'N',136,'M',3,'D',10,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        'algorithm',{@MOEADILD,4},'problem',@DTLZ1,'N',136,'M',3,'D',10,'maxFE',136*250,'outputFcn',@ALGORITHM.LastGenAll;
+        };
+end
