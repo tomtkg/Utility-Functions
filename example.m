@@ -4,6 +4,7 @@ function example()
     RNexample();
     WVexample();
     ACexample();
+    Geometry();
 end
 function RNexample()
 %Random Number example
